@@ -7,3 +7,7 @@ Complete two classes:
 
 
 Submit the two files to codePost for testing and grading.
+
+A sample text file, produce.txt, is also included if you'd like to use this one (or make your own).
+
+If you are having trouble writing code that reads input from a text file, copy and paste this piece of starter code from the Benford's Law program. 
