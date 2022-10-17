@@ -135,6 +135,8 @@ public class BoxOfProduce
     }
     
     // getter methods for the three items in the box (order is not important)
+    // DO NOT change the headers of these methods. codePost expects these methods
+    // to exist during the testing phase.
     public String getFirstChoice(){
          // TODO: your code here
          return ""; // delete this line of code
