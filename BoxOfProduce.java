@@ -109,6 +109,8 @@ public class BoxOfProduce
     public BoxOfProduce(String produceFile)
     {
         // TODO: your code here
+        // IMPORTANT: make sure you close your file after reading from it
+        // e.g. scanner.close();
        
     }
     
