@@ -136,7 +136,10 @@ public class BoxOfProduce
         
     }
     
-    // getter methods for the three items in the box (order is not important)
+    // getter methods for the three items in the box 
+    // order is not important; HOWEVER, they should consistently
+    // return the same first choice, second choice, and third choice
+    // (that is, don't randomly return a choice each time)
     // DO NOT change the headers of these methods. codePost expects these methods
     // to exist during the testing phase.
     public String getFirstChoice(){
