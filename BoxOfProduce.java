@@ -23,7 +23,8 @@ import java.io.FileWriter;
  *  
  *  This list should be stored in a text file that is read in by your program. 
  *  You can assume that the list contains exactly five types of fruits or vegetables,
- *  each unique.
+ *  each unique. The code for reading from a file is included as we have not covered
+ *  reading from a a file yet.
  *  
  *  Your BoxOfProduce object should randomly select (each equally likely) three items, 
  *  WITHOUT duplicates, that will go in the box.
@@ -108,9 +109,32 @@ public class BoxOfProduce
      */
     public BoxOfProduce(String produceFile)
     {
-        // TODO: your code here
-        // IMPORTANT: make sure you close your file after reading from it
-        // e.g. scanner.close();
+        produceChoices = new String[NUM_PRODUCTS];
+        yourChoices = new String[3];
+        File file = new File(produceFile);
+        
+        int index = 0;
+        try 
+        {
+ 
+            Scanner scanner = new Scanner(file);
+           
+            while (scanner.hasNextLine() && index < NUM_PRODUCTS)
+            {
+                produceChoices[index] = scanner.nextLine();
+                index++;
+                  
+            }
+
+            scanner.close();
+        } 
+        catch (FileNotFoundException e) 
+        {
+            System.out.println("File doesn't exist...couldn't load file");
+            e.printStackTrace();
+        }
+        
+        randomizeBoxProduce();   
        
     }
     
