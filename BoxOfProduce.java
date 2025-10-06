@@ -78,8 +78,11 @@ import java.io.FileWriter;
 
 public class BoxOfProduce
 {
-    // TODO: your code here
+    // TODO: your code here (optional)
     // instance variables
+    private String[] produceChoices; // you can change this to an instance variable of your choice
+    private String[] yourChoices; // this one too...maybe you want three separate String objects instead
+    static final private int NUM_PRODUCTS = 5; 
     
     
 
@@ -109,8 +112,11 @@ public class BoxOfProduce
      */
     public BoxOfProduce(String produceFile)
     {
+        // you can delete the following two lines of code 
+        // base on your choice of instance variables above
         produceChoices = new String[NUM_PRODUCTS];
-        yourChoices = new String[3];
+        yourChoices = new String[3]; 
+        
         File file = new File(produceFile);
         
         int index = 0;
