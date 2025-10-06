@@ -9,7 +9,7 @@ Complete two classes:
 Submit the two files to codePost for testing and grading.
 
 A sample text file, produce.txt, is also included if you'd like to use this one (or make your own).
+Make sure you include it in the same directory as your source code (if using BlueJ). (That is, dump 
+it in the same folder as BlueOfProduce.java.)
 
-If you are having trouble writing code that reads input from a text file, copy and paste the piece of starter code from the Benford's Law program:
-
-https://github.com/AP-Computer-Science-Joe-Polacco/BenfordsLaw/blob/master/Benford.java
+I have included the code for reading from a text file in the constructor for BoxOfProduce, as we will cover that in a later unit. 
